@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Developing in JavaScript...</title>
+    </head>
+    <body>
+        <script>
+            const carros = [
+                ' Onix', 
+                ' Polo', 
+                ' S10', 
+                ' Peugeot', 
+                ' BYD'
+            ]
+
+            //SORT coloca os itens em ordem alfabética
+            carros.sort()
+
+            alert(carros)
+
+            //UNSHIFT adiciona elemento no início do array
+            carros.unshift('YBR')
+            //PUSH adiciona elemento no final do array
+            carros.push(' Lander')
+
+            alert(carros)
+
+            //POP retira elemento do início do array
+            carros.pop()
+            //SHIFT retira elemento do final do array
+            carros.shift()
+
+            alert(carros)
+
+            //UNSHIFT adiciona elemento no início do array
+            carros.unshift(' Lander')
+            //PUSH adiciona elemento no final do array
+            carros.push(' YBR')
+
+            const moto1 = carros.shift()
+            const moto2 = carros.pop()
+            
+            alert(moto1 + "\n" + moto2)
+
+            /*
+            SPLICE serve para:
+            1- excluir itens a partir de uma posição.
+            ex: carros.splice(2, 3) -> exclui 3 itens a partir da posição 2.
+
+            2- inserir itens a partir de uma posição.
+            ex: carros.splice(3, 0, 'Item') -> adiciona o item 'Item' na posição 3 e empurra os itens restantes para baixo.
+
+            3- alterar itens a partir de uma posição.
+            ex: carros.splice(1, 1, 'Item') -> adiciona o item 'Item' na posição 3, substituindo o item que estava na posição.
+            */
+
+            //Adiciona o item 'Hoggar' na posição 0 e empurra os itens restantes para baixo.
+            carros.splice(5, 0, ' Hoggar')
+
+            alert(carros)
+        </script>
+    </body>
+</html>
